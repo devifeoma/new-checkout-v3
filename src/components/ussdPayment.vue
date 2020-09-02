@@ -10,8 +10,8 @@
       <div class="card input__icon">
         <label class="label">Select Bank</label>
         <div class="language__option">
-          <select class="select__bank">
-            <option  @click="completePayment">Click here to choose</option>
+          <select class="select__bank" @change="completePayment" v-model="key">
+            <option>Click here to choose</option>
             <option>Click here to choose</option>
           </select>
         </div>
@@ -28,12 +28,11 @@
         <h6>*966*6*234567*90827#</h6>
 
         <!-- <span>Click here to copy the code</span> -->
+        <button type="submit" class="pay__button">
+          I have completed this payment
+        </button>
       </div>
     </div>
-
-    <button type="submit" class="pay__button">
-      I have completed this payment
-    </button>
   </div>
 </template>
 
@@ -48,13 +47,14 @@ export default {
   data: function() {
     return {
       stage: 1,
+      key: ""
     };
   },
   methods: {
     completePayment() {
       this.stage = 2;
-    },
-  },
+    }
+  }
 };
 </script>
 

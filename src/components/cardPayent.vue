@@ -9,7 +9,8 @@
         <div class="input-form">
           <div class="card input__icon">
             <label class="label">Card number</label>
-            <input  class="input input__card"
+            <input
+              class="input input__card"
               type="text"
               maxlength="16"
               data-mask="0000 0000 0000 0000"
@@ -52,7 +53,12 @@
           <div class="card__exp__cvv input__icon">
             <div class="card__item">
               <label class="label">Valid Till</label>
-              <input type="text" class="input input__card" data-mask="00 / 00" placeholder="MM / YY" />
+              <input
+                type="text"
+                class="input input__card"
+                data-mask="00 / 00"
+                placeholder="MM / YY"
+              />
               <svg
                 width="19"
                 height="18"
@@ -89,7 +95,12 @@
 
             <div class="card__item input__icon">
               <label class="label">Cvv</label>
-              <input type="text" class="input input__card" data-mask="0000" placeholder="123" />
+              <input
+                type="text"
+                class="input input__card"
+                data-mask="0000"
+                placeholder="123"
+              />
               <svg
                 width="19"
                 height="18"
@@ -153,17 +164,17 @@
         /> -->
 
         <!-- <div style="display: flex; flex-direction: row;"> -->
-          <otp-input
+        <otp-input
           input-type="password"
-            ref="otpInput"
-            input-classes="card__pin__input input"
-            separator=""
-            :num-inputs="4"
-            :should-auto-focus="true"
-            :is-input-num="true"
-            @on-change="handleOnChange"
-            @on-complete="handleOnComplete"
-          />
+          ref="otpInput"
+          input-classes="card__pin__input input"
+          separator=""
+          :num-inputs="4"
+          :should-auto-focus="true"
+          :is-input-num="true"
+          @on-change="handleOnChange"
+          @on-complete="handleOnComplete"
+        />
         <!-- </div> -->
       </div>
     </div>
@@ -216,11 +227,11 @@ export default {
     // cardInput,
     // payButton,
     // instruction
-    OtpInput,
+    OtpInput
   },
   data: function() {
     return {
-      stage: 1,
+      stage: 1
     };
   },
   computed: {},
@@ -234,8 +245,8 @@ export default {
     },
     handleOnChange(value) {
       console.log("OTP changed: ", value);
-    },
-  },
+    }
+  }
 };
 </script>
 
