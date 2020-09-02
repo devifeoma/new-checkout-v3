@@ -13,18 +13,7 @@
       <pay-button />
     </div>
 
-       <div>
-      <div class="transaction__details">
-        <!-- <div class="transaction__details__header">
-        <p>Enter your card details to pay</p>
-      </div> -->
-        <instruction />
 
-        <card-input />
-      </div>
-
-      <pay-button />
-    </div>
   </div>
 </template>
 
