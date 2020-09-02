@@ -13,7 +13,6 @@
       <pay-button />
     </div>
 
-
   </div>
 </template>
 
