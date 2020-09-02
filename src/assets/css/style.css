@@ -463,7 +463,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   margin-top: 40px;
   animation: 1.5s linear infinite spinner;
   animation-play-state: inherit;
-  border: solid 2px #000000;
+  /* border: solid 2px #000000; */
   border-bottom-color: #ffffff;
   border-radius: 50%;
   content: "";
