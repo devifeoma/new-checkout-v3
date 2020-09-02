@@ -2,7 +2,7 @@
   <div class="container">
     <div class="first__div">
       <div class="checkout__form">
-        <my-header />
+        <my-header></my-header>
 
         <div class="transaction__details">
           <keep-alive>
@@ -10,7 +10,7 @@
           </keep-alive>
         </div>
 
-        <secured-by-flutterwave />
+        <secured-by-flutterwave></secured-by-flutterwave>
       </div>
     </div>
 
@@ -24,6 +24,7 @@ import cardPayment from "../components/cardPayent.vue";
 import ussdPayment from "../components/ussdPayment.vue";
 import bankPayment from "../components/bankPayment.vue";
 import qrPayment from "../components/qrPayment.vue";
+import barterPayment from "../components/barterPayment.vue";
 import securedByFlutterwave from "../components/footerComponents/securedByFlutterwave.vue";
 import sideBar from "../components/sideBar.vue";
 
@@ -35,8 +36,9 @@ export default {
     ussdPayment,
     bankPayment,
     qrPayment,
+    barterPayment,
     securedByFlutterwave,
-    sideBar
+    sideBar,
   },
   data() {
     return {};
@@ -56,12 +58,15 @@ export default {
       if (this.stage === 4) {
         component = qrPayment;
       }
+      if (this.stage === 5) {
+        component = barterPayment;
+      }
       return component;
     },
     stage() {
       return this.$store.state.stage;
-    }
+    },
   },
-  methods: {}
+  methods: {},
 };
 </script>

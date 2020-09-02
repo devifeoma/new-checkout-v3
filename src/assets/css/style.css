@@ -1025,3 +1025,43 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   margin-left: 70%;
   margin-top: 20%;
 }
+
+.barter__prompt__button {
+  background-color: #ffffff;
+  width: 100%;
+  height: 42px;
+  display: block;
+  border-color: #f5a623;
+  border-radius: 5px;
+  padding: 14px 28px;
+  margin-top: 30px;
+  cursor: pointer;
+  font-family: FLW-Regular;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #f5a623;
+}
+
+.barter__prompt__button :focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.or {
+  font-family: Flw-Regular;
+  font-size: 14px;
+  line-height: 14px;
+  color: #8B8B8B;
+}
+
+.line__border {
+  display: flex;
+  margin-top: 30px;
+}
+
+.hr__style {
+  border-top: 1px solid red;
+  width: 50%;
+}
+
