@@ -217,13 +217,33 @@
   color: #333333;
 }
 
-.transaction__details input {
+.transaction__details .input {
   margin: 0.3rem 0;
   width: 100%;
   border: none;
   border-bottom: 1px solid gainsboro;
   font-size: 1rem;
   padding: 10px;
+}
+
+.transaction__details .card__pin__input {
+  border: 1px solid gainsboro;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 32px;
+}
+
+.transaction__details .input__card {
+  border: none;
+  border-bottom: 1px solid gainsboro;
+  padding-left: 30px;
+}
+
+.card__pin>div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  border-radius: 4px;
 }
 
 /* Pay with Paga Transaction details */
@@ -276,7 +296,7 @@ input::placeholder {
   font-size: 15px;
   line-height: 19px;
   letter-spacing: 0.72px;
-  color: #0F273F;
+  color: #0f273f;
 }
 
 input:focus {
@@ -330,7 +350,7 @@ input:focus {
   color: #d2dce8;
   position: absolute;
   left: 0;
-  top: 35px;
+  top: 32px;
   /* padding: 9px 9px; */
 }
 
@@ -418,7 +438,6 @@ input[type="number"], input[type="password"] {
   border: 1px solid white;
   border-radius: 4px;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-  ;
 }
 
 input[type="number"]:hover, input[type="password"]:hover, input[type="password"]:focus, input[type="number"]:focus {
@@ -750,7 +769,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: 1px solid #EBEBEB;
+  border-bottom: 1px solid #ebebeb;
   padding: 20px 0 20px 0;
 }
 
@@ -775,7 +794,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 }
 
 .bank__transfer__notification {
-  background: #FFFCF9;
+  background: #fffcf9;
   border: 1px solid rgba(108, 108, 108, 0.17);
   box-sizing: border-box;
   border-radius: 4px;
@@ -804,7 +823,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 }
 
 .second__div {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   width: 38%;
 }
 
@@ -830,7 +849,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 
 .hover {
   /* background: rgba(242, 201, 76, 0.18); */
-  background-color: #FCE3BA;
+  background-color: #fce3ba;
 }
 
 .ul {
@@ -897,7 +916,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 }
 
 #closeX {
-  border: 1px solid #E4E4E4;
+  border: 1px solid #e4e4e4;
   height: 50px;
   width: 50px;
   text-align: center;
@@ -934,7 +953,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 
 .mobile__money__captcha__intruction {
   display: flex;
-  background: #FFFCF9;
+  background: #fffcf9;
   border: 1px solid rgba(108, 108, 108, 0.17);
   box-sizing: border-box;
   border-radius: 2px;
@@ -958,8 +977,8 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 .saved__card {
   display: flex;
   justify-content: flex-start;
-  background: #FFFFFF;
-  border: 1px solid #D2DCE8;
+  background: #ffffff;
+  border: 1px solid #d2dce8;
   box-sizing: border-box;
   border-radius: 6px;
   width: 100%;
@@ -984,11 +1003,11 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   line-height: 14px;
   text-align: center;
   letter-spacing: 0.3px;
-  color: #F5A623;
+  color: #f5a623;
 }
 
 .bank__transfer__notification {
-  background: #FFFCF9;
+  background: #fffcf9;
   border: 1px solid rgba(108, 108, 108, 0.17);
   box-sizing: border-box;
   border-radius: 4px;
@@ -1010,7 +1029,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 .bank__transfer__notification button {
   display: flex;
   justify-content: center;
-  background: #F5A623;
+  background: #f5a623;
   border-radius: 4px;
   margin-top: 10px;
   margin: auto;
@@ -1052,7 +1071,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   font-family: Flw-Regular;
   font-size: 14px;
   line-height: 14px;
-  color: #8B8B8B;
+  color: #8b8b8b;
 }
 
 .line__border {
@@ -1061,7 +1080,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 }
 
 .hr__style {
-  border-top: 1px solid red;
+  border-width: 0.946925px 0 0 0;
+  border-top-color: #e4ecf3;
   width: 50%;
 }
-

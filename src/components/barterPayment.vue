@@ -28,12 +28,12 @@ export default {
   components: {
     barterInput,
     payButton,
-    barterPromptButton,
+    barterPromptButton
   },
   computed: {
     stage() {
       return this.$store.state.stage;
-    },
-  },
+    }
+  }
 };
 </script>

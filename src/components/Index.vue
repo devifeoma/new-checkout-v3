@@ -38,7 +38,7 @@ export default {
     qrPayment,
     barterPayment,
     securedByFlutterwave,
-    sideBar,
+    sideBar
   },
   data() {
     return {};
@@ -65,8 +65,8 @@ export default {
     },
     stage() {
       return this.$store.state.stage;
-    },
+    }
   },
-  methods: {},
+  methods: {}
 };
 </script>
