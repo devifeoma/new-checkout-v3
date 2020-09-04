@@ -65,6 +65,9 @@ export default {
     },
     stage() {
       return this.$store.state.stage;
+    },
+    sidebar() {
+      return this.$store.state.sidebar;
     }
   },
   methods: {}

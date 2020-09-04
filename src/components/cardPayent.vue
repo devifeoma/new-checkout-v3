@@ -130,40 +130,6 @@
 
     <div v-if="stage === 2">
       <div class="card__pin">
-        <!-- <input
-          id="box1"
-          type="password"
-          class="card__pin__input"
-          maxlength="1"
-          onkeyup="onKeyUpEvent(1, event)"
-          onfocus="onFocusEvent(1)"
-        />
-        <input
-          id="box2"
-          style="-webkit-text-security: square; margin-right: 20.7px;"
-          type="password"
-          maxlength="1"
-          onkeyup="onKeyUpEvent(2, event)"
-          onfocus="onFocusEvent(2)"
-        />
-        <input
-          id="box3"
-          style="-webkit-text-security: square; margin-right: 20.7px;"
-          type="password"
-          maxlength="1"
-          onkeyup="onKeyUpEvent(3, event)"
-          onfocus="onFocusEvent(3)"
-        />
-        <input
-          id="box4"
-          style="-webkit-text-security: square; margin-right: 20.7px;"
-          type="password"
-          maxlength="1"
-          onkeyup="onKeyUpEvent(4, event)"
-          onfocus="onFocusEvent(4)"
-        /> -->
-
-        <!-- <div style="display: flex; flex-direction: row;"> -->
         <otp-input
           input-type="password"
           ref="otpInput"
@@ -175,7 +141,6 @@
           @on-change="handleOnChange"
           @on-complete="handleOnComplete"
         />
-        <!-- </div> -->
       </div>
     </div>
 
